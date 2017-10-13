@@ -1,6 +1,15 @@
 # libcouch
 
 ## Replication
+
+### Protocol
+
+First of all the CouchDB Replicator verifies, if source and target exist. If the source does not exist an error is reported. 
+The resulting action concerning the target check depends on the parameter <code>creating_target</code>. If the parameter is set to 
+*true*, the target is created, otherwise an error is reported.
+
+The method <code>HEAD /{db}</code> is used for the query.
+
 ### Clustering
 
 In a cluster, replication jobs are balanced evenly among all the nodes nodes such that a replication job runs on only one node at a time.
