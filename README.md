@@ -10,6 +10,8 @@ The resulting action concerning the target check depends on the parameter <code>
 
 The method <code>HEAD /{db}</code> is used for the query.
 
+![Alt](images/verify-peers.png)
+
 ### Clustering
 
 In a cluster, replication jobs are balanced evenly among all the nodes nodes such that a replication job runs on only one node at a time.
